@@ -118,7 +118,7 @@ def infer():
     count = 1
     for img_path, mask_path in zip(imgs_path, masks_path):
       try:
-            img = cv2.cv2.imread(img_path)
+            img = cv2.imread(img_path)
             (thresh, mask) = cv2.threshold(cv2.cvtColor(cv2.imread(mask_path), cv2.COLOR_BGR2GRAY), 128, 255,
                                            cv2.THRESH_BINARY)
 
