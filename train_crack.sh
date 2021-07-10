@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 train.py --backbone resnet --lr 0.007 --workers 4 --epochs 50 --batch-size 16 --gpu-ids 0  --eval-interval 1 --dataset crack --resume run/crack/deeplab-resnet/experiment_10/checkpoint.pth.tar --start_epoch 2
