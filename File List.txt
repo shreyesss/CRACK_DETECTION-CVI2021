@@ -1,0 +1,11 @@
+CFD 097
+CRACK500_20160222_081113_1921_721
+CRACK500_20160222_081031_1_721
+CRACK500_20160222_081031_641_361
+CRACK500_20160222_081031_1921_721
+CRACK500_20160222_115828_641_1
+noncrack_noncrack_concrete_wall_28_5.jpg
+
+The Straight Vertical Crack (titled completed, i changed the name before
+checking its actual one. Its from CFD only, so you'll have to find it. 
+The rest of the files I've used are listed above. 
