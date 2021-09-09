@@ -87,7 +87,7 @@ We tweak the parameters to get best results, like changing area to minimum, sett
 
 ## Results for Attention head 2 as feature 
 
-
+--------Input Image --------------- Generated Image ----------------- Ground Truth ------------------ Feature 
 
 
 ![image](https://user-images.githubusercontent.com/84932711/132723742-3e834279-0ea3-4dee-8dcd-c358fa053d58.png)
