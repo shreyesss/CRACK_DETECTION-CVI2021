@@ -85,3 +85,26 @@ We tweak the parameters to get best results, like changing area to minimum, sett
 ![image](https://user-images.githubusercontent.com/84932711/128047447-908c0d81-b5f8-4b04-86a7-05bd0f4dd4f3.png)
 ![image](https://user-images.githubusercontent.com/84932711/128047455-6c4b4e15-cd79-4c6a-bc39-29a7bd05d1cd.png)
 
+## Results for Attention head 2 as feature 
+
+![image](https://user-images.githubusercontent.com/84932711/132723742-3e834279-0ea3-4dee-8dcd-c358fa053d58.png)
+![image](https://user-images.githubusercontent.com/84932711/132723760-7b3ff2d0-03e6-43f9-a0aa-735058296ef0.png)
+![image](https://user-images.githubusercontent.com/84932711/132723778-255000f7-9ed5-4439-8ba6-478d8dfab2be.png)
+![image](https://user-images.githubusercontent.com/84932711/132723790-94088a75-bdb9-44a6-ac67-baef9a005064.png)
+![image](https://user-images.githubusercontent.com/84932711/132723799-e8841a5e-0eb6-4253-b042-ce951093c297.png)
+![image](https://user-images.githubusercontent.com/84932711/132723805-928965d9-9e6d-49c2-9106-629dacd4b952.png)
+![image](https://user-images.githubusercontent.com/84932711/132723814-bc05f549-2a06-45df-ad04-d9570a6d6c38.png)
+![image](https://user-images.githubusercontent.com/84932711/132723833-3cfc4500-bc06-431d-a57b-218726f15c27.png)
+![image](https://user-images.githubusercontent.com/84932711/132723854-0dcc7c48-1d4b-4100-b48a-2e0e036a60d7.png)
+![image](https://user-images.githubusercontent.com/84932711/132723869-b0c1f2eb-2b1c-4ace-9ff9-c9b0afccf4b8.png)
+![image](https://user-images.githubusercontent.com/84932711/132724196-bce52c27-8e27-4c65-be8a-2f32d0740b3d.png)
+![image](https://user-images.githubusercontent.com/84932711/132724219-57917bb2-b623-44b3-9383-25c2d3d6edfb.png)
+![image](https://user-images.githubusercontent.com/84932711/132724321-fd972531-c473-40a2-a56e-3d33b4a3bbe1.png)
+![image](https://user-images.githubusercontent.com/84932711/132724349-664d01d0-8b5d-4fdc-b896-08b9c1c58dc6.png)
+![image](https://user-images.githubusercontent.com/84932711/132724377-6167468e-12b2-4a2e-9c03-ccf6ccdd36cd.png)
+![image](https://user-images.githubusercontent.com/84932711/132724390-b2a8b61e-d428-44d8-86d9-5350bf14c12c.png)
+![image](https://user-images.githubusercontent.com/84932711/132724402-19f3d524-5d41-47a6-85de-762278ced65b.png)
+![image](https://user-images.githubusercontent.com/84932711/132724424-75133509-41a1-4789-90cc-1757bbd5aedf.png)
+![image](https://user-images.githubusercontent.com/84932711/132724432-1f3ef1f1-4b98-45dc-8706-442224911c69.png)
+![image](https://user-images.githubusercontent.com/84932711/132724443-094f8e90-4c56-4350-a521-d8570e8f0026.png)
+
