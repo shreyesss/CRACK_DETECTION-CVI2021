@@ -135,8 +135,9 @@ def trainer_crack(args, model, snapshot_path):
             image_batch, label_batch = sampled_batch['img'], sampled_batch['mask']
             image_batch, label_batch = image_batch.cuda(), label_batch.cuda()
             outputs = model(image_batch)
-            loss_ce = ce_loss(torch.nn.Sigmoid()(outputs[:,0]),label_batch.float())
-            loss_dice = dice_loss(outputs, label_batch, softmax=True)
+            outputs = torch.nn.Sigmoid()(outputs)
+            loss_ce = ce_loss(outputs[:,0],label_batch.float())
+            loss_dice = dice_loss(outputs, label_batch, softmax=False)
             loss = 0.4 * loss_ce + 0.6 * loss_dice
             optimizer.zero_grad()
             loss.backward()
@@ -149,19 +150,17 @@ def trainer_crack(args, model, snapshot_path):
             writer.add_scalar('info/lr', lr_, iter_num)
             writer.add_scalar('info/total_loss', loss, iter_num)
             writer.add_scalar('info/loss_ce', loss_ce, iter_num)
+            writer.add_scalar('info/loss_dice', loss_dice, iter_num)
 
             logging.info('iteration %d : loss : %f, loss_ce: %f' % (iter_num, loss.item(), loss_ce.item()))
 
             if iter_num % 20 == 0:
-                image = image_batch[1, 0:1, :, :]
-                image = (image - image.min()) / (image.max() - image.min())
-                writer.add_image('train/Image', image, iter_num)
-                outputs = torch.argmax(torch.softmax(outputs, dim=1), dim=1, keepdim=True)
-                writer.add_image('train/Prediction', outputs[1, ...] * 50, iter_num)
-                labs = label_batch[1, ...].unsqueeze(0) * 50
-                writer.add_image('train/GroundTruth', labs, iter_num)
+                writer.add_image('train/Image', image_batch[0], iter_num , dataformats = "CHW")
+                writer.add_image('train/Prediction', outputs[0], iter_num, dataformats="CHW")
+                label_batch = torch.unsqueeze(label_batch,1)
+                writer.add_image('train/GroundTruth', label_batch[0], iter_num , dataformats="CHW")
 
-        save_interval = 50  # int(max_epoch/6)
+        save_interval = 10  # int(max_epoch/6)
         if epoch_num > int(max_epoch / 2) and (epoch_num + 1) % save_interval == 0:
             save_mode_path = os.path.join(snapshot_path, 'epoch_' + str(epoch_num) + '.pth')
             torch.save(model.state_dict(), save_mode_path)
