@@ -161,7 +161,7 @@ def trainer_crack(args, model, snapshot_path):
                 writer.add_image('train/GroundTruth', label_batch[0], iter_num , dataformats="CHW")
 
         # save_interval = 1  # int(max_epoch/6)
-            if iter_num % 5 == 0 :
+            if iter_num % 2000 == 0 :
                 print("yodelie")
                 save_mode_path = os.path.join(snapshot_path, 'epoch_' + str(epoch_num) + 'iter_' + str(iter_num) +  '.pth')
                 torch.save(model.state_dict(), save_mode_path)
