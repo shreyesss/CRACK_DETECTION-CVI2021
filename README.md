@@ -19,7 +19,7 @@ The codes for the work "Swin-Unet: Unet-like Pure Transformer for Medical Image 
 - Train
 
 ```bash
-sh train.sh or python train.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
+python experiment.py ##set max possible batch size from config 
 ```
 
 - Test 
